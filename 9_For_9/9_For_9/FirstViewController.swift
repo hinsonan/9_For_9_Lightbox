@@ -19,6 +19,22 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // 1
+        var nav = self.navigationController?.navigationBar
+        // 2
+        //nav?.barStyle = UIBarStyle.Black
+        //nav?.tintColor = UIColor.yellowColor()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        // 4
+        let image = UIImage(named: "Nav_Logo")
+        imageView.image = image
+        // 5
+        navigationItem.titleView = imageView
+    }
 
 
 }
