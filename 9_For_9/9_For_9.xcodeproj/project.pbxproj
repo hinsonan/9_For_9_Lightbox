@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F761FAE480400EC0064 /* MeetTableViewController.swift */; };
+		39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F781FAE500900EC0064 /* MeetTableViewCell.swift */; };
 		39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */; };
 		39B4C6391F95AAB1009BAF14 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */; };
-		39B4C63B1F95AAB1009BAF14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C63A1F95AAB1009BAF14 /* SecondViewController.swift */; };
 		39B4C63E1F95AAB1009BAF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63C1F95AAB1009BAF14 /* Main.storyboard */; };
 		39B4C6401F95AAB2009BAF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */; };
 		39B4C6431F95AAB2009BAF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39015F761FAE480400EC0064 /* MeetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewController.swift; sourceTree = "<group>"; };
+		39015F781FAE500900EC0064 /* MeetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewCell.swift; sourceTree = "<group>"; };
 		39B4C6331F95AAB1009BAF14 /* 9_For_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9_For_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		39B4C63A1F95AAB1009BAF14 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		39B4C63D1F95AAB1009BAF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39B4C6421F95AAB2009BAF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 			children = (
 				39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */,
 				39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */,
-				39B4C63A1F95AAB1009BAF14 /* SecondViewController.swift */,
 				39B4C63C1F95AAB1009BAF14 /* Main.storyboard */,
+				39015F781FAE500900EC0064 /* MeetTableViewCell.swift */,
 				39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */,
 				39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */,
 				39B4C6441F95AAB2009BAF14 /* Info.plist */,
+				39015F761FAE480400EC0064 /* MeetTableViewController.swift */,
 			);
 			path = 9_For_9;
 			sourceTree = "<group>";
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B4C63B1F95AAB1009BAF14 /* SecondViewController.swift in Sources */,
+				39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */,
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,
+				39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */,
 				39B4C6391F95AAB1009BAF14 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
