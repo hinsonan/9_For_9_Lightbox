@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F761FAE480400EC0064 /* MeetTableViewController.swift */; };
 		39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F781FAE500900EC0064 /* MeetTableViewCell.swift */; };
+		39B1AE151FAE9F7000F64F34 /* Meet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1AE141FAE9F7000F64F34 /* Meet.swift */; };
 		39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */; };
 		39B4C6391F95AAB1009BAF14 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */; };
 		39B4C63E1F95AAB1009BAF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63C1F95AAB1009BAF14 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		39015F761FAE480400EC0064 /* MeetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewController.swift; sourceTree = "<group>"; };
 		39015F781FAE500900EC0064 /* MeetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewCell.swift; sourceTree = "<group>"; };
+		39B1AE141FAE9F7000F64F34 /* Meet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meet.swift; sourceTree = "<group>"; };
 		39B4C6331F95AAB1009BAF14 /* 9_For_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9_For_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */,
 				39B4C6381F95AAB1009BAF14 /* FirstViewController.swift */,
 				39B4C63C1F95AAB1009BAF14 /* Main.storyboard */,
+				39B1AE141FAE9F7000F64F34 /* Meet.swift */,
 				39015F781FAE500900EC0064 /* MeetTableViewCell.swift */,
 				39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */,
 				39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,
 				39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */,
 				39B4C6391F95AAB1009BAF14 /* FirstViewController.swift in Sources */,
+				39B1AE151FAE9F7000F64F34 /* Meet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
