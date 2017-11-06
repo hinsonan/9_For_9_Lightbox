@@ -65,9 +65,31 @@ class MeetTableViewController: UITableViewController {
             if let unwrappedData = data{
                 meetCell.meetCellName.text = unwrappedData[indexPath.row].name
                 meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
-                meetCell.meetCellImage.image = UIImage(named: unwrappedData[indexPath.row].imgName!)
-            }
+                if let imageName = unwrappedData[indexPath.row].imgName{
+                    meetCell.meetCellImage.image = UIImage(named: imageName)
+                }else{
+                    meetCell.meetCellImage.image = nil
+                }
             
+            //sets up the use for imgURLs
+            //sets up image urls in the home page
+            if let imageURL = unwrappedData[indexPath.row].imgURL{
+                let session = URLSession(configuration: .default)
+                if let url = URL(string: imageURL){
+                    let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
+                        if let data = data{
+                            DispatchQueue.main.async {
+                                meetCell.meetCellImage.image = UIImage(data: data)
+                            }
+                            
+                            
+                        }
+                    })
+                    task.resume()
+                }
+                }
+                
+            }
             
         }
         
