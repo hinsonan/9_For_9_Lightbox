@@ -70,17 +70,20 @@
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x2w-cW-jVJ">
-                                            <rect key="frame" x="220" y="47" width="65.5" height="51"/>
+                                            <rect key="frame" x="171" y="11" width="150" height="59.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-EW-GJk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-EW-GJk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="zx9-IY-cQL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-7Z-6U1">
-                                                    <rect key="frame" x="0.0" y="30.5" width="65.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="41.5" width="59" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -90,8 +93,8 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="E3i-4l-r2A" secondAttribute="bottom" constant="57.5" id="00J-A5-9k8"/>
                                         <constraint firstAttribute="trailing" secondItem="E3i-4l-r2A" secondAttribute="trailing" constant="234" id="HRw-8t-uZQ"/>
-                                        <constraint firstItem="x2w-cW-jVJ" firstAttribute="leading" secondItem="E3i-4l-r2A" secondAttribute="trailing" constant="79" id="Pcd-Dn-Pcm"/>
-                                        <constraint firstItem="x2w-cW-jVJ" firstAttribute="top" secondItem="YGu-Lf-cuy" secondAttribute="top" constant="47" id="bBx-bu-iq8"/>
+                                        <constraint firstItem="x2w-cW-jVJ" firstAttribute="leading" secondItem="E3i-4l-r2A" secondAttribute="trailing" constant="30" id="Pcd-Dn-Pcm"/>
+                                        <constraint firstItem="x2w-cW-jVJ" firstAttribute="top" secondItem="YGu-Lf-cuy" secondAttribute="top" constant="11" id="bBx-bu-iq8"/>
                                         <constraint firstItem="E3i-4l-r2A" firstAttribute="top" secondItem="YGu-Lf-cuy" secondAttribute="top" constant="6" id="bc0-UQ-WfX"/>
                                         <constraint firstItem="gqv-yf-aQ8" firstAttribute="leading" secondItem="YGu-Lf-cuy" secondAttribute="leading" constant="20" symbolic="YES" id="gEU-Ua-uYR"/>
                                         <constraint firstAttribute="bottom" secondItem="gqv-yf-aQ8" secondAttribute="bottom" constant="19.5" id="jAx-kd-KSa"/>

@@ -9,10 +9,13 @@
 import UIKit
 
 class MeetTableViewController: UITableViewController {
-
+    
+    var data: [Meet]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        data = Data.meetData
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,7 +53,7 @@ class MeetTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return data?.count ?? 0
     }
 
     
@@ -58,7 +61,17 @@ class MeetTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "meetCell", for: indexPath)
 
         // Configure the cell...
-
+        if let meetCell = cell as? MeetTableViewCell{
+            if let unwrappedData = data{
+                meetCell.meetCellName.text = unwrappedData[indexPath.row].name
+                meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
+                meetCell.meetCellImage.image = UIImage(named: unwrappedData[indexPath.row].imgName!)
+            }
+            
+            
+        }
+        
+        
         return cell
     }
     
