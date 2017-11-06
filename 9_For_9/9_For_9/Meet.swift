@@ -9,10 +9,28 @@
 import Foundation
 
 class Meet{
-    var Name: String?
-    var Location: String?
-    var ImgName: String?
-    var ImgURL: String?
-    var Password: String?
-    var Creater: String?
+    var name: String?
+    var location: String?
+    var imgName: String?
+    var imgURL: String?
+    var password: String?
+    var creater: String?
+    
+    init(name: String, location: String, password: String, creater: String){
+        self.name = name
+        self.location = location
+        self.password = password
+        self.creater = creater
+        
+    }
+    
+    convenience init(name: String, location: String, password: String, creater: String, imgName: String){
+        self.init(name: name, location: location, password: password, creater: creater)
+        self.imgName = imgName
+    }
+    
+    convenience init(name: String, location: String, password: String, creater: String, imgURL: String){
+        self.init(name: name, location: location, password: password, creater: creater)
+        self.imgURL = imgURL
+    }
 }
