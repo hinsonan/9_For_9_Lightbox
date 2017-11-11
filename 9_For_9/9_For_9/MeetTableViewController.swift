@@ -15,6 +15,10 @@ class MeetTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Meets"
+        
+        
         data = Data.meetData
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -30,7 +34,7 @@ class MeetTableViewController: UITableViewController {
         //nav?.barStyle = UIBarStyle.Black
         //nav?.tintColor = UIColor.yellowColor()
         // 3
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
         imageView.contentMode = .scaleAspectFit
         // 4
         let image = UIImage(named: "Nav_Logo")
@@ -65,6 +69,7 @@ class MeetTableViewController: UITableViewController {
             if let unwrappedData = data{
                 meetCell.meetCellName.text = unwrappedData[indexPath.row].name
                 meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
+                meetCell.meetDate.text = unwrappedData[indexPath.row].date
                 if let imageName = unwrappedData[indexPath.row].imgName{
                     meetCell.meetCellImage.image = UIImage(named: imageName)
                 }else{

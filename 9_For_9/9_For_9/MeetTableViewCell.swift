@@ -12,7 +12,8 @@ class MeetTableViewCell: UITableViewCell {
 
     @IBOutlet weak var meetCellImage: UIImageView!
     @IBOutlet weak var meetCellName: UILabel!
-    @IBOutlet weak var meetCellLocation: UILabel!
+    @IBOutlet weak var meetCellLocation: UILabel!    
+    @IBOutlet weak var meetDate: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
