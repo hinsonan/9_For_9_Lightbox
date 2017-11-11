@@ -57,7 +57,9 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Cqh-Hz-nbT"/>
                                             </constraints>
-                                            <state key="normal" title="Join"/>
+                                            <state key="normal" title="Join">
+                                                <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
                                             <connections>
                                                 <segue destination="IOF-uB-Zjw" kind="show" identifier="meetSegue" id="f95-vO-7W7"/>
                                             </connections>
