@@ -15,6 +15,7 @@
 		39B4C63E1F95AAB1009BAF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63C1F95AAB1009BAF14 /* Main.storyboard */; };
 		39B4C6401F95AAB2009BAF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */; };
 		39B4C6431F95AAB2009BAF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */; };
+		39FDC8BC1FB7DA7C00AA3AFF /* MeetJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39B4C6421F95AAB2009BAF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39B4C6441F95AAB2009BAF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetJoinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */,
 				39B4C6441F95AAB2009BAF14 /* Info.plist */,
 				39015F761FAE480400EC0064 /* MeetTableViewController.swift */,
+				39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */,
 				3965E6971FB0E37B0076CB57 /* Data.swift */,
 			);
 			path = 9_For_9;
@@ -150,6 +153,7 @@
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,
 				39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */,
 				39B1AE151FAE9F7000F64F34 /* Meet.swift in Sources */,
+				39FDC8BC1FB7DA7C00AA3AFF /* MeetJoinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
