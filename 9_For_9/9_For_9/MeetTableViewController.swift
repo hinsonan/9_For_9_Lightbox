@@ -149,7 +149,9 @@ class MeetTableViewController: UITableViewController {
         if let identifier = segue.identifier {
             if identifier == "meetSegue" {
                 if let svc = segue.destination as? MeetJoinViewController,
-                    let cell = sender as? UITableViewCell,
+                    let button = sender as? UIButton,
+                    let view = button.superview,
+                    let cell = view.superview as? MeetTableViewCell,
                     let data = data {
                     if let indexPath = tableView.indexPath(for: cell) {
                         svc.meet = data[indexPath.row]

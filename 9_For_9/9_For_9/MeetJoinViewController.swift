@@ -12,25 +12,30 @@ class MeetJoinViewController: UIViewController {
     
     var meet: Meet?
     
+    @IBOutlet weak var meetJoinName: UILabel!
+    @IBOutlet weak var meetJoinImage: UIImageView!
+    @IBOutlet weak var meetJoinCreator: UILabel!
+    @IBOutlet weak var meetJoinDate: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        /*
-        locationLabel.text = meet?.location
-        dateLabel.text = meet?.timestamp.description
-        if let imageName = meet?.imageName {
-            meetImageView.image = UIImage(named: imageName)
+       
+        meetJoinName.text = meet?.name
+        meetJoinDate.text = meet?.date
+        meetJoinCreator.text = meet?.creator
+        if let imageName = meet?.imgName {
+            meetJoinImage.image = UIImage(named: imageName)
             // Do any additional setup after loading the view.
-        } else if let imageURL = meet?.imageURL{
+        } else if let imageURL = meet?.imgURL{
             let session = URLSession(configuration: .default)
             if let url = URL(string: imageURL){
                 let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
                     if let data = data{
                         DispatchQueue.main.async {
-                            self.stacheImageView.image = UIImage(data: data)
+                            self.meetJoinImage.image = UIImage(data: data)
                         }
                         
                         
@@ -38,13 +43,13 @@ class MeetJoinViewController: UIViewController {
                 })
                 task.resume()
             }
-        }*/
+        }
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         // 1
-        var nav = self.navigationController?.navigationBar
+        //var nav = self.navigationController?.navigationBar
         // 2
         //nav?.barStyle = UIBarStyle.Black
         //nav?.tintColor = UIColor.yellowColor()

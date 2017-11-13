@@ -15,24 +15,24 @@ class Meet{
     var imgName: String?
     var imgURL: String?
     var password: String?
-    var creater: String?
+    var creator: String?
     
-    init(name: String, location: String, date: String, password: String, creater: String){
+    init(name: String, location: String, date: String, password: String, creator: String){
         self.name = name
         self.location = location
         self.password = password
-        self.creater = creater
+        self.creator = creator
         self.date = date
         
     }
     
-    convenience init(name: String, location: String, date: String, password: String, creater: String, imgName: String){
-        self.init(name: name, location: location, date: date, password: password, creater: creater)
+    convenience init(name: String, location: String, date: String, password: String, creator: String, imgName: String){
+        self.init(name: name, location: location, date: date, password: password, creator: creator)
         self.imgName = imgName
     }
     
-    convenience init(name: String, location: String, date: String, password: String, creater: String, imgURL: String){
-        self.init(name: name, location: location, date: date, password: password, creater: creater)
+    convenience init(name: String, location: String, date: String, password: String, creator: String, imgURL: String){
+        self.init(name: name, location: location, date: date, password: password, creator: creator)
         self.imgURL = imgURL
     }
 }
