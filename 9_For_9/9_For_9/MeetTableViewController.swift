@@ -29,7 +29,7 @@ class MeetTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // 1
-        var nav = self.navigationController?.navigationBar
+        //var nav = self.navigationController?.navigationBar
         // 2
         //nav?.barStyle = UIBarStyle.Black
         //nav?.tintColor = UIColor.yellowColor()
