@@ -63,9 +63,11 @@ class MeetTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "meetCell", for: indexPath)
-
+        
         // Configure the cell...
         if let meetCell = cell as? MeetTableViewCell{
+            //makes the cell not selectable
+            meetCell.selectionStyle = UITableViewCellSelectionStyle.none
             if let unwrappedData = data{
                 meetCell.meetCellName.text = unwrappedData[indexPath.row].name
                 meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
