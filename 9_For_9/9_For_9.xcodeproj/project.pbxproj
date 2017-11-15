@@ -15,6 +15,7 @@
 		39B4C63E1F95AAB1009BAF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63C1F95AAB1009BAF14 /* Main.storyboard */; };
 		39B4C6401F95AAB2009BAF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */; };
 		39B4C6431F95AAB2009BAF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C6411F95AAB2009BAF14 /* LaunchScreen.storyboard */; };
+		39FC58F41FBBCA5A002B1FA6 /* SelectJudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FC58F31FBBCA5A002B1FA6 /* SelectJudgeViewController.swift */; };
 		39FDC8BC1FB7DA7C00AA3AFF /* MeetJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39B4C6421F95AAB2009BAF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39B4C6441F95AAB2009BAF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39FC58F31FBBCA5A002B1FA6 /* SelectJudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectJudgeViewController.swift; sourceTree = "<group>"; };
 		39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetJoinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 			children = (
 				39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */,
 				39B4C63C1F95AAB1009BAF14 /* Main.storyboard */,
+				39FC58F31FBBCA5A002B1FA6 /* SelectJudgeViewController.swift */,
 				39B1AE141FAE9F7000F64F34 /* Meet.swift */,
 				39015F781FAE500900EC0064 /* MeetTableViewCell.swift */,
 				39B4C63F1F95AAB2009BAF14 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */,
+				39FC58F41FBBCA5A002B1FA6 /* SelectJudgeViewController.swift in Sources */,
 				3965E6981FB0E37B0076CB57 /* Data.swift in Sources */,
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,
 				39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */,

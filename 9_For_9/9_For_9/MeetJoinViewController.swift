@@ -16,11 +16,13 @@ class MeetJoinViewController: UIViewController {
     @IBOutlet weak var meetJoinImage: UIImageView!
     @IBOutlet weak var meetJoinCreator: UILabel!
     @IBOutlet weak var meetJoinDate: UILabel!
-    
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var wrongPasswordText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //hides the wrong password text
+        wrongPasswordText.isHidden = true
         
        
         meetJoinName.text = meet?.name
@@ -47,6 +49,21 @@ class MeetJoinViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //this function will check if the password matched on join btn press
+    @IBAction func onJoin(_ sender: Any) {
+        //conditional to check if the password matches up and then triggers the segue
+        if passwordField.text == meet?.password{
+            performSegue(withIdentifier: "selectJudge", sender: nil)
+        }else{
+            //display the wrong password text
+            wrongPasswordText.isHidden = false
+            //make the wrong password text dissapear after 2 secs
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.wrongPasswordText.isHidden = true
+            }
+        }
+        
+    }
     override func viewDidAppear(_ animated: Bool) {
         // 1
         //var nav = self.navigationController?.navigationBar

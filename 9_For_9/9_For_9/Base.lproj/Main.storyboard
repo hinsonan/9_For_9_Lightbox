@@ -152,6 +152,9 @@
                                                 <state key="normal" title="Join">
                                                     <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onJoin:" destination="IOF-uB-Zjw" eventType="touchUpInside" id="WOf-B9-H1S"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7W2-zI-Rcu">
                                                 <rect key="frame" x="102" y="381" width="170" height="60.5"/>
@@ -193,14 +196,24 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong Password Try Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-os-nlj">
+                                                <rect key="frame" x="96" y="469" width="194" height="21"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="q5b-gZ-2bH" secondAttribute="bottom" constant="847.5" id="1Wk-ns-7Nb"/>
                                             <constraint firstItem="7W2-zI-Rcu" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="102" id="8eE-cE-xaG"/>
+                                            <constraint firstItem="YyN-os-nlj" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="96" id="BNO-Jh-Lig"/>
                                             <constraint firstAttribute="trailing" secondItem="q5b-gZ-2bH" secondAttribute="trailing" constant="20" symbolic="YES" id="HXg-sP-R8J"/>
                                             <constraint firstAttribute="trailing" secondItem="7W2-zI-Rcu" secondAttribute="trailing" constant="103" id="Ifx-EG-BRI"/>
                                             <constraint firstItem="NGu-Xo-Z9g" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="72" id="PQZ-HV-c55"/>
+                                            <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="YyN-os-nlj" secondAttribute="bottom" constant="48" id="PxX-HX-9pP"/>
+                                            <constraint firstItem="YyN-os-nlj" firstAttribute="top" secondItem="7W2-zI-Rcu" secondAttribute="bottom" constant="27.5" id="UrX-3k-Juo"/>
+                                            <constraint firstAttribute="trailing" secondItem="YyN-os-nlj" secondAttribute="trailing" constant="85" id="Vya-wM-yeh"/>
                                             <constraint firstAttribute="trailing" secondItem="gdl-Jt-aLG" secondAttribute="trailing" constant="20" symbolic="YES" id="We2-u1-KDg"/>
                                             <constraint firstItem="2aP-JH-OcI" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="112" id="Xsu-kA-LEA"/>
                                             <constraint firstAttribute="trailing" secondItem="NGu-Xo-Z9g" secondAttribute="trailing" constant="68" id="ZWk-uW-5RC"/>
@@ -244,11 +257,52 @@
                         <outlet property="meetJoinDate" destination="O84-G4-jij" id="VPA-e8-uNL"/>
                         <outlet property="meetJoinImage" destination="NGu-Xo-Z9g" id="glp-Nz-Srh"/>
                         <outlet property="meetJoinName" destination="q5b-gZ-2bH" id="qae-68-3Au"/>
+                        <outlet property="passwordField" destination="SI6-C8-wQC" id="64d-ks-r3t"/>
+                        <outlet property="wrongPasswordText" destination="YyN-os-nlj" id="faq-1D-EYt"/>
+                        <segue destination="aet-Yk-IHg" kind="show" identifier="selectJudge" id="RML-aG-3kY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSq-sf-khk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3392.8000000000002" y="175.86206896551727"/>
+        </scene>
+        <!--Select Judge View Controller-->
+        <scene sceneID="UDB-wZ-adE">
+            <objects>
+                <viewController id="aet-Yk-IHg" customClass="SelectJudgeViewController" customModule="__For_9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I8k-3J-DJV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-fI-w7v">
+                                <rect key="frame" x="16" y="323" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-Xg-63R">
+                                <rect key="frame" x="166" y="323" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ety-S2-oQA">
+                                <rect key="frame" x="295" y="317" width="64" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ieE-gA-0FJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Trh-Vr-7fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4357.6000000000004" y="175.86206896551727"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vuU-Tp-OUQ">
