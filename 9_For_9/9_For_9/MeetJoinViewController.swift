@@ -47,6 +47,8 @@ class MeetJoinViewController: UIViewController {
             }
         }
         // Do any additional setup after loading the view.
+        //this line calls the function to close keyboard on tap
+        self.hideKeyboardWhenTappedAround()
     }
     
     //this function will check if the password matched on join btn press
@@ -96,4 +98,16 @@ class MeetJoinViewController: UIViewController {
     }
     */
 
+}
+//this extension will make the keyboard dissapear on touch
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

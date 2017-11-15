@@ -274,36 +274,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="92" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-If-imO">
-                                <rect key="frame" x="16" y="323" width="347.5" height="31.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-fI-w7v">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="31.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-Xg-63R">
-                                        <rect key="frame" x="136" y="0.0" width="60.5" height="31.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ety-S2-oQA">
-                                        <rect key="frame" x="288.5" y="0.0" width="59" height="31.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-Xg-63R">
+                                <rect key="frame" x="150" y="318" width="61" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ety-S2-oQA">
+                                <rect key="frame" x="289" y="318" width="59" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-fI-w7v">
+                                <rect key="frame" x="16" y="318" width="44" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dWV-If-imO" firstAttribute="leading" secondItem="ieE-gA-0FJ" secondAttribute="leading" constant="16" id="949-YM-I7M"/>
-                            <constraint firstItem="ieE-gA-0FJ" firstAttribute="trailing" secondItem="dWV-If-imO" secondAttribute="trailing" constant="11.5" id="gea-TC-19R"/>
-                            <constraint firstItem="ieE-gA-0FJ" firstAttribute="bottom" secondItem="dWV-If-imO" secondAttribute="bottom" constant="312.5" id="r0F-Vk-176"/>
-                            <constraint firstItem="dWV-If-imO" firstAttribute="top" secondItem="ieE-gA-0FJ" secondAttribute="top" constant="259" id="rL3-jI-GKO"/>
+                            <constraint firstItem="WAJ-fI-w7v" firstAttribute="leading" secondItem="I8k-3J-DJV" secondAttribute="leadingMargin" id="1ZW-xr-pBh"/>
+                            <constraint firstItem="Lek-Xg-63R" firstAttribute="leading" secondItem="WAJ-fI-w7v" secondAttribute="trailing" constant="90" id="ZSh-ji-10v"/>
+                            <constraint firstItem="ety-S2-oQA" firstAttribute="baseline" secondItem="Lek-Xg-63R" secondAttribute="baseline" id="hKT-Cs-ve3"/>
+                            <constraint firstItem="Lek-Xg-63R" firstAttribute="baseline" secondItem="WAJ-fI-w7v" secondAttribute="baseline" id="hlC-ar-iOw"/>
+                            <constraint firstItem="ety-S2-oQA" firstAttribute="leading" secondItem="Lek-Xg-63R" secondAttribute="trailing" constant="78" id="oaf-E6-T4p"/>
+                            <constraint firstItem="WAJ-fI-w7v" firstAttribute="centerY" secondItem="I8k-3J-DJV" secondAttribute="centerY" id="odb-iC-3Zh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ieE-gA-0FJ"/>
                     </view>
