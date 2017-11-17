@@ -10,7 +10,6 @@ import UIKit
 
 class SelectJudgeViewController: UIViewController {
 
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +18,7 @@ class SelectJudgeViewController: UIViewController {
         self.navigationItem.title = "Judge Position"
 
         // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,29 +41,32 @@ class SelectJudgeViewController: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    //these functions will be used later to give the judge the correct position
+  
     
-    @IBAction func leftJudgeSelect(_ sender: UIButton) {
-        performSegue(withIdentifier: "judgeSegue", sender: nil)
-    }
     
-    @IBAction func headJudgeSelect(_ sender: UIButton) {
-        performSegue(withIdentifier: "judgeSegue", sender: nil)
-
-    }
-    
-    @IBAction func rightJudgeSelect(_ sender: UIButton) {
-        performSegue(withIdentifier: "judgeSegue", sender: nil)
-
-    }
-    
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+        //gives the judge the correct position based on the button they hit
+        if let identifier = segue.identifier{
+            if identifier == "leftJudge" || identifier == "headJudge" || identifier == "rightJudge"{
+               if let jvc = segue.destination as? JudgeViewController{
+                if identifier == "leftJudge"{
+                    jvc.judge = Judge(position: Judge.Position.Left)
+                }else if identifier == "headJudge"{
+                    jvc.judge = Judge(position: Judge.Position.Head)
+                }else{
+                    jvc.judge = Judge(position: Judge.Position.Right)
+                    }
+                }
+            }
+    
 
+        }
+    }
 }

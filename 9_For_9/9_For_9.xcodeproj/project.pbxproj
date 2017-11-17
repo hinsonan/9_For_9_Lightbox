@@ -11,6 +11,7 @@
 		39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F781FAE500900EC0064 /* MeetTableViewCell.swift */; };
 		3965E6981FB0E37B0076CB57 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965E6971FB0E37B0076CB57 /* Data.swift */; };
 		398C64171FBE84B400092780 /* JudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C64161FBE84B400092780 /* JudgeViewController.swift */; };
+		398E40381FBF726E00195476 /* Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398E40371FBF726E00195476 /* Judge.swift */; };
 		39B1AE151FAE9F7000F64F34 /* Meet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1AE141FAE9F7000F64F34 /* Meet.swift */; };
 		39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */; };
 		39B4C63E1F95AAB1009BAF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B4C63C1F95AAB1009BAF14 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		39015F781FAE500900EC0064 /* MeetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewCell.swift; sourceTree = "<group>"; };
 		3965E6971FB0E37B0076CB57 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		398C64161FBE84B400092780 /* JudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgeViewController.swift; sourceTree = "<group>"; };
+		398E40371FBF726E00195476 /* Judge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Judge.swift; sourceTree = "<group>"; };
 		39B1AE141FAE9F7000F64F34 /* Meet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meet.swift; sourceTree = "<group>"; };
 		39B4C6331F95AAB1009BAF14 /* 9_For_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9_For_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */,
 				39B4C63C1F95AAB1009BAF14 /* Main.storyboard */,
 				398C64161FBE84B400092780 /* JudgeViewController.swift */,
+				398E40371FBF726E00195476 /* Judge.swift */,
 				39FC58F31FBBCA5A002B1FA6 /* SelectJudgeViewController.swift */,
 				39B1AE141FAE9F7000F64F34 /* Meet.swift */,
 				39015F781FAE500900EC0064 /* MeetTableViewCell.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */,
 				39FC58F41FBBCA5A002B1FA6 /* SelectJudgeViewController.swift in Sources */,
+				398E40381FBF726E00195476 /* Judge.swift in Sources */,
 				398C64171FBE84B400092780 /* JudgeViewController.swift in Sources */,
 				3965E6981FB0E37B0076CB57 /* Data.swift in Sources */,
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,

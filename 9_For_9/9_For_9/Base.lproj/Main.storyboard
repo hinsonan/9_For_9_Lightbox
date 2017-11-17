@@ -284,21 +284,21 @@
                                 <rect key="frame" x="261" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="rightJudge"/>
                                 <connections>
-                                    <action selector="rightJudgeSelect:" destination="aet-Yk-IHg" eventType="touchUpInside" id="YNn-Q4-ASm"/>
+                                    <segue destination="caz-Ea-tVW" kind="show" identifier="rightJudge" id="5x6-9L-jhR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-Sd-R9H">
                                 <rect key="frame" x="16" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="leftJudge"/>
                                 <connections>
-                                    <action selector="leftJudgeSelect:" destination="aet-Yk-IHg" eventType="touchUpInside" id="Mq3-E0-HWZ"/>
+                                    <segue destination="caz-Ea-tVW" kind="show" identifier="leftJudge" id="SmH-t0-imz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi5-XC-Yrd">
                                 <rect key="frame" x="136" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="headJudge"/>
                                 <connections>
-                                    <action selector="headJudgeSelect:" destination="aet-Yk-IHg" eventType="touchUpInside" id="nXt-7U-PPa"/>
+                                    <segue destination="caz-Ea-tVW" kind="show" identifier="headJudge" id="gGa-oH-d3s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,9 +320,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ieE-gA-0FJ"/>
                     </view>
-                    <connections>
-                        <segue destination="caz-Ea-tVW" kind="show" identifier="judgeSegue" id="LQb-Iw-rZd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trh-Vr-7fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,10 +336,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-ER-W0r">
                                 <rect key="frame" x="114" y="174" width="147" height="181"/>
                                 <state key="normal" backgroundImage="goodLift"/>
+                                <connections>
+                                    <action selector="gooLift:" destination="caz-Ea-tVW" eventType="touchUpInside" id="ZSR-HM-YI3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4No-yv-6gp">
                                 <rect key="frame" x="114" y="375" width="147" height="185"/>
                                 <state key="normal" backgroundImage="badLift"/>
+                                <connections>
+                                    <action selector="badLift:" destination="caz-Ea-tVW" eventType="touchUpInside" id="OU7-u9-aVk"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="125" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-E1-51g">
                                 <rect key="frame" x="16" y="77" width="340" height="30"/>
@@ -383,6 +386,9 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetJudging:" destination="caz-Ea-tVW" eventType="touchUpInside" id="fbh-Kn-XeQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1r-2f-VhO">
                                 <rect key="frame" x="317" y="609" width="42" height="31.5"/>
@@ -415,6 +421,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hT9-au-VLe"/>
                     </view>
+                    <connections>
+                        <outlet property="headImage" destination="TiY-Uy-NXO" id="sca-25-yG6"/>
+                        <outlet property="judgePositionText" destination="x1r-2f-VhO" id="mYY-AY-Ri7"/>
+                        <outlet property="leftImage" destination="Pv1-WK-Uti" id="Tcw-B9-GQu"/>
+                        <outlet property="rightImage" destination="4z8-5F-NZw" id="rva-V3-RIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgU-xz-8jO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -448,4 +460,7 @@
         <image name="nuetralLift" width="67" height="65"/>
         <image name="rightJudge" width="102" height="102"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gGa-oH-d3s"/>
+    </inferredMetricsTieBreakers>
 </document>
