@@ -10,6 +10,11 @@ import UIKit
 
 class SelectJudgeViewController: UIViewController {
 
+    @IBOutlet weak var leftJudgeImage: UIImageView!
+    @IBOutlet weak var headJudge: UIImageView!
+    @IBOutlet weak var rightJudge: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
