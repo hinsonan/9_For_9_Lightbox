@@ -10,10 +10,7 @@ import UIKit
 
 class SelectJudgeViewController: UIViewController {
 
-    @IBOutlet weak var leftJudgeImage: UIImageView!
-    @IBOutlet weak var headJudge: UIImageView!
-    @IBOutlet weak var rightJudge: UIImageView!
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +42,20 @@ class SelectJudgeViewController: UIViewController {
         navigationItem.titleView = imageView
     }
     
+    @IBAction func leftJudgeSelect(_ sender: UIButton) {
+        performSegue(withIdentifier: "judgeSegue", sender: nil)
+    }
+    
+    @IBAction func headJudgeSelect(_ sender: UIButton) {
+        performSegue(withIdentifier: "judgeSegue", sender: nil)
 
+    }
+    
+    @IBAction func rightJudgeSelect(_ sender: UIButton) {
+        performSegue(withIdentifier: "judgeSegue", sender: nil)
+
+    }
+    
     /*
     // MARK: - Navigation
 
