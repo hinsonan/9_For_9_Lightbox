@@ -99,7 +99,7 @@ class MeetJoinViewController: UIViewController {
     */
 
 }
-//this extension will make the keyboard dissapear on touch
+//this extension will make the keyboard dissapear on touch and alert message
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -109,5 +109,18 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func alert(message: String, title: String = "") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "Leave", style: .default, handler: {action in
+           //write function to go back to home page and delete data thats not needed
+            self.navigationController?.popToRootViewController(animated: true)
+            
+        })
+        let CancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alertController.addAction(OKAction)
+        alertController.addAction(CancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }

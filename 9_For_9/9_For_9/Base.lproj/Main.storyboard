@@ -320,6 +320,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ieE-gA-0FJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pAO-E6-Hkc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="115-D6-XKh">
+                            <connections>
+                                <action selector="leaveSession:" destination="aet-Yk-IHg" id="aFf-W0-5aP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trh-Vr-7fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,6 +428,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hT9-au-VLe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vji-65-4GS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="gTf-S5-TbJ">
+                            <connections>
+                                <action selector="leaveSession:" destination="caz-Ea-tVW" id="Yfj-Rk-yTt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="headImage" destination="TiY-Uy-NXO" id="sca-25-yG6"/>
                         <outlet property="judgePositionText" destination="x1r-2f-VhO" id="mYY-AY-Ri7"/>

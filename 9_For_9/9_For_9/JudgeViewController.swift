@@ -21,7 +21,7 @@ class JudgeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.navigationItem.hidesBackButton = true;
         //gives the position text
         if judge?.position == Judge.Position.Left{
             judgePositionText.text = "L"
@@ -53,6 +53,11 @@ class JudgeViewController: UIViewController {
         imageView.image = image
         // 5
         navigationItem.titleView = imageView
+    }
+    
+    
+    @IBAction func leaveSession(_ sender: UIBarButtonItem) {
+        alert(message: "Do you want to leave", title: "Leave Meet")
     }
     
     @IBAction func gooLift(_ sender: UIButton) {

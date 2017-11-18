@@ -14,7 +14,7 @@ class SelectJudgeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.navigationItem.hidesBackButton = true;
+        self.navigationItem.hidesBackButton = true;
         self.navigationItem.title = "Judge Position"
 
         // Do any additional setup after loading the view.
@@ -24,6 +24,11 @@ class SelectJudgeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func leaveSession(_ sender: UIBarButtonItem) {
+        alert(message: "Do you want to leave", title: "Leave Meet")
     }
     
     override func viewDidAppear(_ animated: Bool) {
