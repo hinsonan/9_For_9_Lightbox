@@ -17,10 +17,14 @@ class JudgeViewController: UIViewController {
     
     //this will be used for determining position
     var judge: Judge?
+    //possibly use this to derive title and maybe some way to connect other judges
+    var meet : Meet?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //adds nav bar heading
+        //self.navigationItem.title = meet?.location
         self.navigationItem.hidesBackButton = true;
         //gives the position text
         if judge?.position == Judge.Position.Left{
@@ -55,11 +59,11 @@ class JudgeViewController: UIViewController {
         navigationItem.titleView = imageView
     }
     
-    
+    //calls the leave fucntion
     @IBAction func leaveSession(_ sender: UIBarButtonItem) {
         alert(message: "Do you want to leave", title: "Leave Meet")
     }
-    
+    //changes the images these functions will need to do more in the future
     @IBAction func gooLift(_ sender: UIButton) {
         if judge?.position == Judge.Position.Left{
             leftImage.image = UIImage(named: "goodLift")

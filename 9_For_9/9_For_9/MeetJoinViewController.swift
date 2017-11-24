@@ -24,7 +24,7 @@ class MeetJoinViewController: UIViewController {
         //hides the wrong password text
         wrongPasswordText.isHidden = true
         
-       
+       self.navigationItem.title = meet?.location
         meetJoinName.text = meet?.name
         meetJoinDate.text = meet?.date
         meetJoinCreator.text = meet?.creator
@@ -101,6 +101,8 @@ class MeetJoinViewController: UIViewController {
 }
 //this extension will make the keyboard dissapear on touch and alert message
 extension UIViewController {
+    
+    //this function hides the keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -111,6 +113,7 @@ extension UIViewController {
         view.endEditing(true)
     }
     
+    //this is the alert message function
     func alert(message: String, title: String = "") {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "Leave", style: .default, handler: {action in

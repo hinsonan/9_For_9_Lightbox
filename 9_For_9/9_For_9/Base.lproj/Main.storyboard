@@ -280,21 +280,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-aP-vst">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-aP-vst">
                                 <rect key="frame" x="261" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="rightJudge"/>
                                 <connections>
                                     <segue destination="caz-Ea-tVW" kind="show" identifier="rightJudge" id="5x6-9L-jhR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-Sd-R9H">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-Sd-R9H">
                                 <rect key="frame" x="16" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="leftJudge"/>
                                 <connections>
                                     <segue destination="caz-Ea-tVW" kind="show" identifier="leftJudge" id="SmH-t0-imz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi5-XC-Yrd">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi5-XC-Yrd">
                                 <rect key="frame" x="136" y="249" width="102" height="134"/>
                                 <state key="normal" backgroundImage="headJudge"/>
                                 <connections>
