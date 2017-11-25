@@ -116,12 +116,31 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="tSj-9Q-F53">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nzt-Rn-swg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nzt-Rn-swg">
+                            <connections>
+                                <segue destination="IJs-9F-sSD" kind="show" id="6vB-dc-BKa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcw-gn-CFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2608.8000000000002" y="-322.48875562218893"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="46h-2E-918">
+            <objects>
+                <viewController id="IJs-9F-sSD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5hE-RP-XnP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kft-5U-b4D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9La-Ib-w2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3393" y="-640"/>
         </scene>
         <!--Meet Join View Controller-->
         <scene sceneID="yfO-Zc-cUS">
