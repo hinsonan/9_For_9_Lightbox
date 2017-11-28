@@ -10,6 +10,7 @@
 		39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F761FAE480400EC0064 /* MeetTableViewController.swift */; };
 		39015F791FAE500900EC0064 /* MeetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39015F781FAE500900EC0064 /* MeetTableViewCell.swift */; };
 		3954200E1FC8D61100AA4E80 /* CreateMeetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954200D1FC8D61100AA4E80 /* CreateMeetViewController.swift */; };
+		395681F71FCCF24C0058B6A6 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395681F61FCCF24C0058B6A6 /* PreviewViewController.swift */; };
 		3965E6981FB0E37B0076CB57 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3965E6971FB0E37B0076CB57 /* Data.swift */; };
 		398C64171FBE84B400092780 /* JudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398C64161FBE84B400092780 /* JudgeViewController.swift */; };
 		398E40381FBF726E00195476 /* Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398E40371FBF726E00195476 /* Judge.swift */; };
@@ -26,6 +27,7 @@
 		39015F761FAE480400EC0064 /* MeetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewController.swift; sourceTree = "<group>"; };
 		39015F781FAE500900EC0064 /* MeetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetTableViewCell.swift; sourceTree = "<group>"; };
 		3954200D1FC8D61100AA4E80 /* CreateMeetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMeetViewController.swift; sourceTree = "<group>"; };
+		395681F61FCCF24C0058B6A6 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		3965E6971FB0E37B0076CB57 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		398C64161FBE84B400092780 /* JudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgeViewController.swift; sourceTree = "<group>"; };
 		398E40371FBF726E00195476 /* Judge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Judge.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				39B4C6361F95AAB1009BAF14 /* AppDelegate.swift */,
 				39B4C63C1F95AAB1009BAF14 /* Main.storyboard */,
 				3954200D1FC8D61100AA4E80 /* CreateMeetViewController.swift */,
+				395681F61FCCF24C0058B6A6 /* PreviewViewController.swift */,
 				39015F761FAE480400EC0064 /* MeetTableViewController.swift */,
 				39FDC8BB1FB7DA7C00AA3AFF /* MeetJoinViewController.swift */,
 				39FC58F31FBBCA5A002B1FA6 /* SelectJudgeViewController.swift */,
@@ -164,6 +167,7 @@
 				39FC58F41FBBCA5A002B1FA6 /* SelectJudgeViewController.swift in Sources */,
 				398E40381FBF726E00195476 /* Judge.swift in Sources */,
 				398C64171FBE84B400092780 /* JudgeViewController.swift in Sources */,
+				395681F71FCCF24C0058B6A6 /* PreviewViewController.swift in Sources */,
 				3965E6981FB0E37B0076CB57 /* Data.swift in Sources */,
 				39B4C6371F95AAB1009BAF14 /* AppDelegate.swift in Sources */,
 				39015F771FAE480400EC0064 /* MeetTableViewController.swift in Sources */,

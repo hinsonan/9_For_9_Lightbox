@@ -192,6 +192,9 @@
                                                 <rect key="frame" x="8" y="518" width="359" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Preview"/>
+                                                <connections>
+                                                    <action selector="previewNewMeet:" destination="IJs-9F-sSD" eventType="touchUpInside" id="rn6-uf-ta4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -228,17 +231,23 @@
                         <viewLayoutGuide key="safeArea" id="Kft-5U-b4D"/>
                     </view>
                     <connections>
-                        <segue destination="Xeb-34-89H" kind="show" id="A1w-ko-DYB"/>
+                        <outlet property="creator" destination="NRp-AU-aId" id="8Kv-13-Nxy"/>
+                        <outlet property="date" destination="RUQ-vs-JYv" id="H6T-kq-EXj"/>
+                        <outlet property="imgText" destination="QCE-ix-3LX" id="idJ-XV-OSR"/>
+                        <outlet property="location" destination="7dZ-2y-MpP" id="FWI-tX-2dX"/>
+                        <outlet property="meetName" destination="cOZ-iN-2ML" id="a9g-Cc-Vhn"/>
+                        <outlet property="passwordText" destination="uYU-dm-LhA" id="hhY-gG-eVS"/>
+                        <segue destination="Xeb-34-89H" kind="show" identifier="createMeetSegue" id="A1w-ko-DYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9La-Ib-w2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3392.8000000000002" y="-640.02998500749629"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="baE-Zj-Cre">
             <objects>
-                <viewController id="Xeb-34-89H" sceneMemberID="viewController">
+                <viewController id="Xeb-34-89H" customClass="PreviewViewController" customModule="__For_9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ls2-aR-rck">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,10 +285,10 @@
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="hRh-db-Skl" secondAttribute="bottom" constant="541.5" id="60x-cM-bTq"/>
+                            <constraint firstItem="UgP-Id-t96" firstAttribute="top" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="24" id="7SH-TG-NXx"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="UgP-Id-t96" secondAttribute="bottom" constant="307" id="8Hd-PK-Kv1"/>
                             <constraint firstItem="hRh-db-Skl" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="20" id="BTg-f7-VMs"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="383" id="F0e-dG-gRK"/>
-                            <constraint firstItem="UgP-Id-t96" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="244" id="GQU-G8-b2s"/>
                             <constraint firstItem="UgP-Id-t96" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="112" id="KJm-4d-VKT"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="hRh-db-Skl" secondAttribute="trailing" constant="20" id="L0S-Kv-MpS"/>
                             <constraint firstItem="cOf-U2-kdL" firstAttribute="leading" secondItem="Ls2-aR-rck" secondAttribute="leading" constant="68" id="hN0-sT-dPy"/>
@@ -290,6 +299,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObA-6I-LAP"/>
                     </view>
+                    <connections>
+                        <outlet property="creator" destination="5Qj-IM-0GO" id="Kbw-Xb-gM1"/>
+                        <outlet property="date" destination="D4r-fx-h3R" id="0ZO-df-Y22"/>
+                        <outlet property="image" destination="cOf-U2-kdL" id="DSp-PZ-gbc"/>
+                        <outlet property="titleName" destination="hRh-db-Skl" id="mor-PI-nOi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfR-4G-Hcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
