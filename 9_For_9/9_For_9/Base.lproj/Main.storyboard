@@ -253,16 +253,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbell" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-U2-kdL">
-                                <rect key="frame" x="68" y="145" width="239" height="139"/>
+                                <rect key="frame" x="68" y="191" width="239" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="0Fh-SN-IPi"/>
+                                    <constraint firstAttribute="width" constant="239" id="FnR-jc-T30"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-db-Skl">
-                                <rect key="frame" x="20" y="94" width="335" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-Id-t96">
-                                <rect key="frame" x="112" y="308" width="150" height="52"/>
+                                <rect key="frame" x="112" y="382" width="150" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-IM-0GO">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="24"/>
@@ -281,20 +279,27 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-db-Skl">
+                                <rect key="frame" x="20" y="133" width="335" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="hRh-db-Skl" secondAttribute="bottom" constant="541.5" id="60x-cM-bTq"/>
-                            <constraint firstItem="UgP-Id-t96" firstAttribute="top" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="24" id="7SH-TG-NXx"/>
-                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="UgP-Id-t96" secondAttribute="bottom" constant="307" id="8Hd-PK-Kv1"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="hRh-db-Skl" secondAttribute="bottom" constant="502.5" id="60x-cM-bTq"/>
+                            <constraint firstItem="UgP-Id-t96" firstAttribute="top" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="20" id="7SH-TG-NXx"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="UgP-Id-t96" secondAttribute="bottom" constant="233" id="8Hd-PK-Kv1"/>
                             <constraint firstItem="hRh-db-Skl" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="20" id="BTg-f7-VMs"/>
-                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="383" id="F0e-dG-gRK"/>
+                            <constraint firstItem="cOf-U2-kdL" firstAttribute="top" secondItem="hRh-db-Skl" secondAttribute="bottom" constant="26.5" id="EwZ-xX-PDU"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="305" id="F0e-dG-gRK"/>
                             <constraint firstItem="UgP-Id-t96" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="112" id="KJm-4d-VKT"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="hRh-db-Skl" secondAttribute="trailing" constant="20" id="L0S-Kv-MpS"/>
                             <constraint firstItem="cOf-U2-kdL" firstAttribute="leading" secondItem="Ls2-aR-rck" secondAttribute="leading" constant="68" id="hN0-sT-dPy"/>
-                            <constraint firstItem="cOf-U2-kdL" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="81" id="idA-Ik-xcg"/>
+                            <constraint firstItem="cOf-U2-kdL" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="127" id="idA-Ik-xcg"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="UgP-Id-t96" secondAttribute="trailing" constant="113" id="nFL-JZ-NF4"/>
-                            <constraint firstItem="hRh-db-Skl" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="30" id="s63-ri-BB0"/>
+                            <constraint firstItem="hRh-db-Skl" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="69" id="s63-ri-BB0"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="cOf-U2-kdL" secondAttribute="trailing" constant="68" id="ySh-gH-iyY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObA-6I-LAP"/>
