@@ -191,7 +191,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuQ-SV-hUs">
                                                 <rect key="frame" x="8" y="518" width="359" height="30"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Preview"/>
+                                                <state key="normal" title="Preview">
+                                                    <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="previewNewMeet:" destination="IJs-9F-sSD" eventType="touchUpInside" id="rn6-uf-ta4"/>
                                                 </connections>
@@ -288,7 +290,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-TM-yhx">
                                 <rect key="frame" x="20" y="547" width="339" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="AddMeet:" destination="Xeb-34-89H" eventType="touchUpInside" id="DF8-w0-FXs"/>
                                 </connections>
