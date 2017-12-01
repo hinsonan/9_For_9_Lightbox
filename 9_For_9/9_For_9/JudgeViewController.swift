@@ -34,6 +34,8 @@ class JudgeViewController: UIViewController {
         }else{
             judgePositionText.text = "R"
         }
+        
+        self.navigationItem.title = "Judge Mode"
 
         // Do any additional setup after loading the view.
     }

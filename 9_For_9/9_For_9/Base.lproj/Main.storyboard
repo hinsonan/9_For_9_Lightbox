@@ -355,7 +355,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-Jt-aLG">
-                                                <rect key="frame" x="20" y="538" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="498" width="335" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Join">
                                                     <color key="titleColor" red="0.56470588235294117" green="0.17254901960784313" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,7 +405,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong Password Try Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-os-nlj">
-                                                <rect key="frame" x="96" y="469" width="194" height="21"/>
+                                                <rect key="frame" x="90" y="449" width="194" height="21"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -415,13 +415,13 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="q5b-gZ-2bH" secondAttribute="bottom" constant="847.5" id="1Wk-ns-7Nb"/>
                                             <constraint firstItem="7W2-zI-Rcu" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="102" id="8eE-cE-xaG"/>
-                                            <constraint firstItem="YyN-os-nlj" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="96" id="BNO-Jh-Lig"/>
+                                            <constraint firstItem="YyN-os-nlj" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="90" id="BNO-Jh-Lig"/>
                                             <constraint firstAttribute="trailing" secondItem="q5b-gZ-2bH" secondAttribute="trailing" constant="20" symbolic="YES" id="HXg-sP-R8J"/>
                                             <constraint firstAttribute="trailing" secondItem="7W2-zI-Rcu" secondAttribute="trailing" constant="103" id="Ifx-EG-BRI"/>
                                             <constraint firstItem="NGu-Xo-Z9g" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="72" id="PQZ-HV-c55"/>
-                                            <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="YyN-os-nlj" secondAttribute="bottom" constant="48" id="PxX-HX-9pP"/>
-                                            <constraint firstItem="YyN-os-nlj" firstAttribute="top" secondItem="7W2-zI-Rcu" secondAttribute="bottom" constant="27.5" id="UrX-3k-Juo"/>
-                                            <constraint firstAttribute="trailing" secondItem="YyN-os-nlj" secondAttribute="trailing" constant="85" id="Vya-wM-yeh"/>
+                                            <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="YyN-os-nlj" secondAttribute="bottom" constant="28" id="PxX-HX-9pP"/>
+                                            <constraint firstItem="YyN-os-nlj" firstAttribute="top" secondItem="7W2-zI-Rcu" secondAttribute="bottom" constant="7.5" id="UrX-3k-Juo"/>
+                                            <constraint firstAttribute="trailing" secondItem="YyN-os-nlj" secondAttribute="trailing" constant="91" id="Vya-wM-yeh"/>
                                             <constraint firstAttribute="trailing" secondItem="gdl-Jt-aLG" secondAttribute="trailing" constant="20" symbolic="YES" id="We2-u1-KDg"/>
                                             <constraint firstItem="2aP-JH-OcI" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="112" id="Xsu-kA-LEA"/>
                                             <constraint firstAttribute="trailing" secondItem="NGu-Xo-Z9g" secondAttribute="trailing" constant="68" id="ZWk-uW-5RC"/>
@@ -429,11 +429,11 @@
                                             <constraint firstAttribute="height" constant="900" id="cGR-0n-fR1"/>
                                             <constraint firstItem="2aP-JH-OcI" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="235" id="gNm-tU-nBt"/>
                                             <constraint firstAttribute="bottom" secondItem="NGu-Xo-Z9g" secondAttribute="bottom" constant="689" id="gja-CP-BO9"/>
-                                            <constraint firstAttribute="bottom" secondItem="gdl-Jt-aLG" secondAttribute="bottom" constant="332" id="hH5-V3-Nir"/>
+                                            <constraint firstAttribute="bottom" secondItem="gdl-Jt-aLG" secondAttribute="bottom" constant="372" id="hH5-V3-Nir"/>
                                             <constraint firstItem="q5b-gZ-2bH" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="21" id="hm1-ed-s8u"/>
                                             <constraint firstItem="7W2-zI-Rcu" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="381" id="kHR-WR-VmW"/>
                                             <constraint firstAttribute="bottom" secondItem="7W2-zI-Rcu" secondAttribute="bottom" constant="458.5" id="kWs-Kg-Ny1"/>
-                                            <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="538" id="lpd-vu-obr"/>
+                                            <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="498" id="lpd-vu-obr"/>
                                             <constraint firstItem="q5b-gZ-2bH" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="20" symbolic="YES" id="pdl-2M-cc5"/>
                                             <constraint firstAttribute="trailing" secondItem="2aP-JH-OcI" secondAttribute="trailing" constant="113" id="t3V-hl-P10"/>
                                             <constraint firstAttribute="bottom" secondItem="2aP-JH-OcI" secondAttribute="bottom" constant="613" id="wXx-pC-Q11"/>
