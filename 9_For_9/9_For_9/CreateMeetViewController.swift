@@ -53,24 +53,45 @@ class CreateMeetViewController: UIViewController {
     
     //this function will get the new meet model
     @IBAction func previewNewMeet(_ sender: UIButton) {
-        if meetName.text! == "" || location.text! == "" || date.text! == "" || passwordText.text! == "" || creator.text! == ""{
+        if meetName.text! == "" || imgText.text! == "" || location.text! == "" || date.text! == "" || passwordText.text! == "" || creator.text! == ""{
             print("items were nil")
         }else{
-            if let meetName = meetName.text,
-                let imageName = imgText.text,
-                let locationName = location.text,
-                let dateName = date.text,
-                let passwordName = passwordText.text,
-                let creatorName = creator.text{
-                newMeet = Meet(name: meetName, location: locationName, date: dateName, password: passwordName, creator: creatorName, imgURL: imageName)
-                performSegue(withIdentifier: "createMeetSegue", sender: nil)
+            //check if the string entered is url or regular name
+            var isURL: Bool
+            
+            isURL = verifyUrl(urlString: imgText.text!)
+            
+            if isURL == true{
+                if let meetName = meetName.text,
+                    let imageName = imgText.text,
+                    let locationName = location.text,
+                    let dateName = date.text,
+                    let passwordName = passwordText.text,
+                    let creatorName = creator.text{
+                    // this contructor will be used for imgURLs
+                    newMeet = Meet(name: meetName, location: locationName, date: dateName, password: passwordName, creator: creatorName, imgURL: imageName)
+                    performSegue(withIdentifier: "createMeetSegue", sender: nil)
+                }
+            }else{
+                if let meetName = meetName.text,
+                    let imageName = imgText.text,
+                    let locationName = location.text,
+                    let dateName = date.text,
+                    let passwordName = passwordText.text,
+                    let creatorName = creator.text{
+                    //this contructor is used for imgNames in the assets
+                    newMeet = Meet(name: meetName, location: locationName, date: dateName, password: passwordName, creator: creatorName, imgName: imageName)
+                    performSegue(withIdentifier: "createMeetSegue", sender: nil)
+                }
             }
+            
             
         }
         
-            
+    
         
     }
+    
     
 
     

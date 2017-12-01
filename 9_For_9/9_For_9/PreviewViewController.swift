@@ -23,7 +23,7 @@ class PreviewViewController: UIViewController {
         titleName.text = previewMeet?.name
         creator.text = previewMeet?.creator
         date.text = previewMeet?.date
-        if let imageName = previewMeet?.imgURL {
+        if let imageName = previewMeet?.imgName {
             image.image = UIImage(named: imageName)
             
         } else if let imageURL = previewMeet?.imgURL{
@@ -49,8 +49,52 @@ class PreviewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    @IBAction func AddMeet(_ sender: UIButton) {
+        //print("Please respond")
+        // 1.
+        var passwordTextField: UITextField?
+        
+        // 2.
+        let alertController = UIAlertController(
+            title: "Enter Password",
+            message: "Please enter your credentials",
+            preferredStyle: UIAlertControllerStyle.alert)
+        
+        // 3.
+        let loginAction = UIAlertAction(
+        title: "Add Meet", style: UIAlertActionStyle.default) {
+            (action) -> Void in
+            
+            
+            if let password = passwordTextField?.text {
+                if let newMeetData = self.previewMeet,
+                    password == self.previewMeet?.password{
+                    Data.meetData.append(newMeetData)
+                self.navigationController?.popToRootViewController(animated: true)
+                }
+                
+            } else {
+                print("No password entered")
+            }
+        }
+        
+       
+        alertController.addTextField {
+            (txtPassword) -> Void in
+            passwordTextField = txtPassword
+            
+            passwordTextField!.placeholder = "Password"
+        }
+        
+        // 5.
+        alertController.addAction(loginAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
-        print(previewMeet?.location)
         // 1
         //var nav = self.navigationController?.navigationBar
         // 2
@@ -64,6 +108,8 @@ class PreviewViewController: UIViewController {
         imageView.image = image
         // 5
         navigationItem.titleView = imageView
+        
+        print(previewMeet?.imgName)
     }
 
     /*

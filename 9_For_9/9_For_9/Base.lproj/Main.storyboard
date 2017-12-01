@@ -280,11 +280,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-db-Skl">
-                                <rect key="frame" x="20" y="133" width="335" height="31.5"/>
+                                <rect key="frame" x="20" y="133" width="335" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-TM-yhx">
+                                <rect key="frame" x="20" y="547" width="339" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="AddMeet:" destination="Xeb-34-89H" eventType="touchUpInside" id="DF8-w0-FXs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -296,11 +304,15 @@
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="cOf-U2-kdL" secondAttribute="bottom" constant="305" id="F0e-dG-gRK"/>
                             <constraint firstItem="UgP-Id-t96" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="112" id="KJm-4d-VKT"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="hRh-db-Skl" secondAttribute="trailing" constant="20" id="L0S-Kv-MpS"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="sZs-TM-yhx" secondAttribute="bottom" constant="90" id="Owr-dx-cP6"/>
+                            <constraint firstItem="sZs-TM-yhx" firstAttribute="centerX" secondItem="UgP-Id-t96" secondAttribute="centerX" constant="2.5" id="Qol-d9-zgd"/>
                             <constraint firstItem="cOf-U2-kdL" firstAttribute="leading" secondItem="Ls2-aR-rck" secondAttribute="leading" constant="68" id="hN0-sT-dPy"/>
                             <constraint firstItem="cOf-U2-kdL" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="127" id="idA-Ik-xcg"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="UgP-Id-t96" secondAttribute="trailing" constant="113" id="nFL-JZ-NF4"/>
+                            <constraint firstItem="sZs-TM-yhx" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="20" id="qKM-rB-hY7"/>
                             <constraint firstItem="hRh-db-Skl" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="69" id="s63-ri-BB0"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="cOf-U2-kdL" secondAttribute="trailing" constant="68" id="ySh-gH-iyY"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="sZs-TM-yhx" secondAttribute="trailing" constant="16" id="zxc-qI-p5U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObA-6I-LAP"/>
                     </view>

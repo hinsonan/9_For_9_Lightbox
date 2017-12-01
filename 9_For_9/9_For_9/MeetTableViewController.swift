@@ -41,6 +41,16 @@ class MeetTableViewController: UITableViewController {
         imageView.image = image
         // 5
         navigationItem.titleView = imageView
+        
+        
+    }
+    
+    //this will be used to reload the data
+    override func viewWillAppear(_ animated: Bool) {
+        //let d = Data.sampleData
+        data = Data.meetData
+        
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
