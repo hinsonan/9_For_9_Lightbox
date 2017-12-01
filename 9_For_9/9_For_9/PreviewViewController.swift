@@ -109,7 +109,7 @@ class PreviewViewController: UIViewController {
         // 5
         navigationItem.titleView = imageView
         
-        print(previewMeet?.imgName)
+        
     }
 
     /*

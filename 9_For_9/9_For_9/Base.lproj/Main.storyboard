@@ -506,7 +506,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.85882352941176465" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="DRN-aP-vst" firstAttribute="top" secondItem="ieE-gA-0FJ" secondAttribute="top" constant="185" id="1hi-jo-EVi"/>
                             <constraint firstItem="zi5-XC-Yrd" firstAttribute="top" secondItem="ieE-gA-0FJ" secondAttribute="top" constant="185" id="20l-zl-rlB"/>
@@ -611,7 +611,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.85882352941176465" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4No-yv-6gp" firstAttribute="top" secondItem="hT9-au-VLe" secondAttribute="top" constant="311" id="0wh-pb-XSz"/>
                             <constraint firstItem="x1r-2f-VhO" firstAttribute="top" secondItem="K15-8r-AXn" secondAttribute="top" id="Aoq-GB-YYW"/>
