@@ -552,7 +552,7 @@
                                 <rect key="frame" x="114" y="174" width="147" height="181"/>
                                 <state key="normal" backgroundImage="goodLift"/>
                                 <connections>
-                                    <action selector="gooLift:" destination="caz-Ea-tVW" eventType="touchUpInside" id="ZSR-HM-YI3"/>
+                                    <action selector="goodLift:" destination="caz-Ea-tVW" eventType="touchUpInside" id="bCh-qd-zXN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4No-yv-6gp">

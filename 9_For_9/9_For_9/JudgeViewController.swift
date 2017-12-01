@@ -66,7 +66,7 @@ class JudgeViewController: UIViewController {
         alert(message: "Do you want to leave", title: "Leave Meet")
     }
     //changes the images these functions will need to do more in the future
-    @IBAction func gooLift(_ sender: UIButton) {
+    @IBAction func goodLift(_ sender: UIButton) {
         if judge?.position == Judge.Position.Left{
             leftImage.image = UIImage(named: "goodLift")
         }else if judge?.position == Judge.Position.Head{
@@ -74,6 +74,8 @@ class JudgeViewController: UIViewController {
         }else{
             rightImage.image = UIImage(named: "goodLift")
         }
+        
+        
     }
     
     @IBAction func badLift(_ sender: UIButton) {
