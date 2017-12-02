@@ -644,6 +644,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="badLiftBtn" destination="4No-yv-6gp" id="P8o-7h-ufu"/>
+                        <outlet property="goodLiftBtn" destination="ygA-ER-W0r" id="CFA-xN-aWG"/>
                         <outlet property="headImage" destination="TiY-Uy-NXO" id="sca-25-yG6"/>
                         <outlet property="judgePositionText" destination="x1r-2f-VhO" id="mYY-AY-Ri7"/>
                         <outlet property="leftImage" destination="Pv1-WK-Uti" id="Tcw-B9-GQu"/>

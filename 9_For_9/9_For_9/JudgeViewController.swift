@@ -15,6 +15,8 @@ class JudgeViewController: UIViewController {
     @IBOutlet weak var leftImage: UIImageView!
     @IBOutlet weak var judgePositionText: UILabel!
     
+    @IBOutlet weak var goodLiftBtn: UIButton!
+    @IBOutlet weak var badLiftBtn: UIButton!
     //this will be used for determining position
     var judge: Judge?
     //possibly use this to derive title and maybe some way to connect other judges
@@ -74,7 +76,9 @@ class JudgeViewController: UIViewController {
         }else{
             rightImage.image = UIImage(named: "goodLift")
         }
-        
+        //sets btns to not be pressed until reset is called
+        goodLiftBtn.isEnabled = false;
+        badLiftBtn.isEnabled = false;
         
     }
     
@@ -86,12 +90,18 @@ class JudgeViewController: UIViewController {
         }else{
             rightImage.image = UIImage(named: "badLift")
         }
+        //sets btns to not be pressed until reset is called
+        goodLiftBtn.isEnabled = false;
+        badLiftBtn.isEnabled = false;
     }
     
     @IBAction func resetJudging(_ sender: UIButton) {
         leftImage.image = UIImage(named: "nuetralLift")
         headImage.image = UIImage(named: "nuetralLift")
         rightImage.image = UIImage(named:"nuetralLift")
+        //resets the btns to be active again
+        goodLiftBtn.isEnabled = true;
+        badLiftBtn.isEnabled = true;
     }
     
     /*
