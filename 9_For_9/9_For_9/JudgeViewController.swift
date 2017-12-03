@@ -17,6 +17,7 @@ class JudgeViewController: UIViewController {
     
     @IBOutlet weak var goodLiftBtn: UIButton!
     @IBOutlet weak var badLiftBtn: UIButton!
+    @IBOutlet weak var resetBtn: UIButton!
     //this will be used for determining position
     var judge: Judge?
     //possibly use this to derive title and maybe some way to connect other judges
@@ -38,7 +39,9 @@ class JudgeViewController: UIViewController {
         }
         
         self.navigationItem.title = "Judge Mode"
-
+        
+        //makes the reset btn not pressable
+        resetBtn.isEnabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -76,6 +79,8 @@ class JudgeViewController: UIViewController {
         }else{
             rightImage.image = UIImage(named: "goodLift")
         }
+        //makes the reset enabled
+        resetBtn.isEnabled = true
         //sets btns to not be pressed until reset is called
         goodLiftBtn.isEnabled = false;
         badLiftBtn.isEnabled = false;
@@ -90,6 +95,8 @@ class JudgeViewController: UIViewController {
         }else{
             rightImage.image = UIImage(named: "badLift")
         }
+        //makes the reset enabled
+        resetBtn.isEnabled = true
         //sets btns to not be pressed until reset is called
         goodLiftBtn.isEnabled = false;
         badLiftBtn.isEnabled = false;
@@ -102,6 +109,8 @@ class JudgeViewController: UIViewController {
         //resets the btns to be active again
         goodLiftBtn.isEnabled = true;
         badLiftBtn.isEnabled = true;
+        //sets btn to be inactive again
+        resetBtn.isEnabled = false
     }
     
     /*

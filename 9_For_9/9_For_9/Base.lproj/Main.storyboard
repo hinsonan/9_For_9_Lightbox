@@ -649,6 +649,7 @@
                         <outlet property="headImage" destination="TiY-Uy-NXO" id="sca-25-yG6"/>
                         <outlet property="judgePositionText" destination="x1r-2f-VhO" id="mYY-AY-Ri7"/>
                         <outlet property="leftImage" destination="Pv1-WK-Uti" id="Tcw-B9-GQu"/>
+                        <outlet property="resetBtn" destination="K15-8r-AXn" id="DIy-op-OuA"/>
                         <outlet property="rightImage" destination="4z8-5F-NZw" id="rva-V3-RIx"/>
                     </connections>
                 </viewController>
