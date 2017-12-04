@@ -18,12 +18,14 @@ class CreateMeetViewController: UIViewController {
     @IBOutlet weak var date: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var creator: UITextField!
+    @IBOutlet weak var emptyFields: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        //hide the empty field text
+        emptyFields.isHidden = true
         //set the nav title
         self.navigationItem.title = "Create Meet"
         
@@ -54,7 +56,12 @@ class CreateMeetViewController: UIViewController {
     //this function will get the new meet model
     @IBAction func previewNewMeet(_ sender: UIButton) {
         if meetName.text! == "" || imgText.text! == "" || location.text! == "" || date.text! == "" || passwordText.text! == "" || creator.text! == ""{
-            print("items were nil")
+            //display the wrong password text
+            emptyFields.isHidden = false
+            //make the wrong password text dissapear after 2 secs
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.emptyFields.isHidden = true
+            }
         }else{
             //check if the string entered is url or regular name
             var isURL: Bool

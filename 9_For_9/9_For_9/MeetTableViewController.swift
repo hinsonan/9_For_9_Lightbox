@@ -77,7 +77,7 @@ class MeetTableViewController: UITableViewController {
         // Configure the cell...
         if let meetCell = cell as? MeetTableViewCell{
             //makes the cell not selectable
-            meetCell.selectionStyle = UITableViewCellSelectionStyle.none
+            //meetCell.selectionStyle = UITableViewCellSelectionStyle.none
             if let unwrappedData = data{
                 meetCell.meetCellName.text = unwrappedData[indexPath.row].name
                 meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
@@ -97,8 +97,7 @@ class MeetTableViewController: UITableViewController {
                         if let data = data{
                             DispatchQueue.main.async {
                                 meetCell.meetCellImage.image = UIImage(data: data)
-                            }
-                            
+                            }                           
                             
                         }
                     })
