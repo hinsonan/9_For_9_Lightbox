@@ -47,7 +47,7 @@ class MeetTableViewController: UITableViewController {
     
     //this will be used to reload the data
     override func viewWillAppear(_ animated: Bool) {
-        //let d = Data.sampleData
+        
         data = Data.meetData
         
         tableView.reloadData()
@@ -164,6 +164,19 @@ class MeetTableViewController: UITableViewController {
                     let button = sender as? UIButton,
                     let view = button.superview,
                     let cell = view.superview as? MeetTableViewCell,
+                    let data = data {
+                    if let indexPath = tableView.indexPath(for: cell) {
+                        svc.meet = data[indexPath.row]
+                    }
+                }
+                
+            }
+        }
+        
+        if let identifier = segue.identifier {
+            if identifier == "meetCellSegue" {
+                if let svc = segue.destination as? MeetJoinViewController,
+                    let cell = sender as? UITableViewCell,
                     let data = data {
                     if let indexPath = tableView.indexPath(for: cell) {
                         svc.meet = data[indexPath.row]

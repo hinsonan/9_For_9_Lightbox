@@ -106,6 +106,7 @@
                                     <outlet property="meetCellLocation" destination="zOz-7Z-6U1" id="Xlw-Bf-IQ5"/>
                                     <outlet property="meetCellName" destination="CNS-EW-GJk" id="YCt-E6-AF4"/>
                                     <outlet property="meetDate" destination="jmy-2f-1tx" id="CCp-f7-UuN"/>
+                                    <segue destination="IOF-uB-Zjw" kind="show" identifier="meetCellSegue" id="KCP-BW-pTg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -687,5 +688,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gGa-oH-d3s"/>
+        <segue reference="KCP-BW-pTg"/>
     </inferredMetricsTieBreakers>
 </document>
