@@ -16,8 +16,10 @@ class PreviewViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var creator: UILabel!
     @IBOutlet weak var date: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view
         self.navigationItem.title = previewMeet?.location
         titleName.text = previewMeet?.name
@@ -41,8 +43,11 @@ class PreviewViewController: UIViewController {
                 task.resume()
             }
         }
-        
+        //this line calls the function to close keyboard on tap
+        self.hideKeyboardWhenTappedAround()
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

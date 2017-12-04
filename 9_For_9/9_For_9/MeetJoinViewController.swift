@@ -24,6 +24,10 @@ class MeetJoinViewController: UIViewController {
         //hides the wrong password text
         wrongPasswordText.isHidden = true
         
+        //this section is to help with keyboard scrolling
+        NotificationCenter.default.addObserver(self, selector: #selector(MeetJoinViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MeetJoinViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
        self.navigationItem.title = meet?.location
         meetJoinName.text = meet?.name
         meetJoinDate.text = meet?.date
@@ -85,6 +89,14 @@ class MeetJoinViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //these two functions move the view when keyboard is popped up
+    @objc func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y -= 250
+    }
+    @objc func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y += 250
     }
     
 
