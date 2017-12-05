@@ -279,10 +279,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbell" translatesAutoresizingMaskIntoConstraints="NO" id="cOf-U2-kdL">
-                                <rect key="frame" x="68" y="191" width="239" height="171"/>
+                                <rect key="frame" x="0.0" y="191" width="375" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="0Fh-SN-IPi"/>
-                                    <constraint firstAttribute="width" constant="239" id="FnR-jc-T30"/>
+                                    <constraint firstAttribute="width" constant="375" id="FnR-jc-T30"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UgP-Id-t96">
@@ -335,12 +335,12 @@
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="hRh-db-Skl" secondAttribute="trailing" constant="20" id="L0S-Kv-MpS"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="bottom" secondItem="sZs-TM-yhx" secondAttribute="bottom" constant="90" id="Owr-dx-cP6"/>
                             <constraint firstItem="sZs-TM-yhx" firstAttribute="centerX" secondItem="UgP-Id-t96" secondAttribute="centerX" constant="2.5" id="Qol-d9-zgd"/>
-                            <constraint firstItem="cOf-U2-kdL" firstAttribute="leading" secondItem="Ls2-aR-rck" secondAttribute="leading" constant="68" id="hN0-sT-dPy"/>
+                            <constraint firstItem="cOf-U2-kdL" firstAttribute="leading" secondItem="Ls2-aR-rck" secondAttribute="leading" id="hN0-sT-dPy"/>
                             <constraint firstItem="cOf-U2-kdL" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="127" id="idA-Ik-xcg"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="UgP-Id-t96" secondAttribute="trailing" constant="113" id="nFL-JZ-NF4"/>
                             <constraint firstItem="sZs-TM-yhx" firstAttribute="leading" secondItem="ObA-6I-LAP" secondAttribute="leading" constant="20" id="qKM-rB-hY7"/>
                             <constraint firstItem="hRh-db-Skl" firstAttribute="top" secondItem="ObA-6I-LAP" secondAttribute="top" constant="69" id="s63-ri-BB0"/>
-                            <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="cOf-U2-kdL" secondAttribute="trailing" constant="68" id="ySh-gH-iyY"/>
+                            <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="cOf-U2-kdL" secondAttribute="trailing" id="ySh-gH-iyY"/>
                             <constraint firstItem="ObA-6I-LAP" firstAttribute="trailing" secondItem="sZs-TM-yhx" secondAttribute="trailing" constant="16" id="zxc-qI-p5U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObA-6I-LAP"/>
@@ -371,7 +371,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbell" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-Xo-Z9g">
-                                                <rect key="frame" x="68" y="72" width="239" height="139"/>
+                                                <rect key="frame" x="0.0" y="72" width="375" height="139"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5b-gZ-2bH">
                                                 <rect key="frame" x="20" y="21" width="335" height="31.5"/>
@@ -450,8 +450,8 @@
                                             <constraint firstAttribute="trailing" secondItem="YyN-os-nlj" secondAttribute="trailing" constant="91" id="Vya-wM-yeh"/>
                                             <constraint firstAttribute="trailing" secondItem="gdl-Jt-aLG" secondAttribute="trailing" constant="20" symbolic="YES" id="We2-u1-KDg"/>
                                             <constraint firstItem="2aP-JH-OcI" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="112" id="Xsu-kA-LEA"/>
-                                            <constraint firstAttribute="trailing" secondItem="NGu-Xo-Z9g" secondAttribute="trailing" constant="68" id="ZWk-uW-5RC"/>
-                                            <constraint firstItem="NGu-Xo-Z9g" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="68" id="a5g-hw-BU3"/>
+                                            <constraint firstAttribute="trailing" secondItem="NGu-Xo-Z9g" secondAttribute="trailing" id="ZWk-uW-5RC"/>
+                                            <constraint firstItem="NGu-Xo-Z9g" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" id="a5g-hw-BU3"/>
                                             <constraint firstAttribute="height" constant="900" id="cGR-0n-fR1"/>
                                             <constraint firstItem="2aP-JH-OcI" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="235" id="gNm-tU-nBt"/>
                                             <constraint firstAttribute="bottom" secondItem="NGu-Xo-Z9g" secondAttribute="bottom" constant="689" id="gja-CP-BO9"/>
@@ -498,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSq-sf-khk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3393" y="176"/>
+            <point key="canvasLocation" x="3392.8000000000002" y="175.86206896551727"/>
         </scene>
         <!--Select Judge View Controller-->
         <scene sceneID="UDB-wZ-adE">
