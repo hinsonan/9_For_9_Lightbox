@@ -91,6 +91,7 @@ class PreviewViewController: UIViewController {
             passwordTextField = txtPassword
             
             passwordTextField!.placeholder = "Password"
+            passwordTextField?.isSecureTextEntry = true
         }
         
         // 5.
