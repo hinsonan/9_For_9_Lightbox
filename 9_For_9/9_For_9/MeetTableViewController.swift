@@ -12,6 +12,10 @@ class MeetTableViewController: UITableViewController {
     
     var data: [Meet]?
     
+    //these will set up the things needed for the search bar
+    var filteredData =  [Meet]()
+    let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +24,10 @@ class MeetTableViewController: UITableViewController {
         
         
         data = Data.meetData
+        
+        setUpSearchController()
+        
+        self.hideKeyboardWhenTappedAround()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -57,6 +65,14 @@ class MeetTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setUpSearchController(){
+        navigationItem.searchController = searchController
+        searchController.searchBar.placeholder = "Search Meets"
+        searchController.obscuresBackgroundDuringPresentation  = false
+        definesPresentationContext = true
+        searchController.searchResultsUpdater = self
+    }
 
     // MARK: - Table view data source
 
@@ -67,6 +83,9 @@ class MeetTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if isFiltering(){
+            return filteredData.count
+        }
         return data?.count ?? 0
     }
 
@@ -76,13 +95,19 @@ class MeetTableViewController: UITableViewController {
         
         // Configure the cell...
         if let meetCell = cell as? MeetTableViewCell{
-            //makes the cell not selectable
-            //meetCell.selectionStyle = UITableViewCellSelectionStyle.none
+            
             if let unwrappedData = data{
-                meetCell.meetCellName.text = unwrappedData[indexPath.row].name
-                meetCell.meetCellLocation.text = unwrappedData[indexPath.row].location
-                meetCell.meetDate.text = unwrappedData[indexPath.row].date
-                if let imageName = unwrappedData[indexPath.row].imgName{
+                let meet: Meet
+                if isFiltering(){
+                    meet = filteredData[indexPath.row]
+                }else{
+                    meet = unwrappedData[indexPath.row]
+                }
+                
+                meetCell.meetCellName.text = meet.name
+                meetCell.meetCellLocation.text = meet.location
+                meetCell.meetDate.text = meet.date
+                if let imageName = meet.imgName{
                     meetCell.meetCellImage.image = UIImage(named: imageName)
                 }else{
                     meetCell.meetCellImage.image = nil
@@ -90,7 +115,7 @@ class MeetTableViewController: UITableViewController {
             
             //sets up the use for imgURLs
             //sets up image urls in the home page
-            if let imageURL = unwrappedData[indexPath.row].imgURL{
+            if let imageURL = meet.imgURL{
                 let session = URLSession(configuration: .default)
                 if let url = URL(string: imageURL){
                     let task = session.dataTask(with: url, completionHandler: { (data, response, error) in
@@ -189,5 +214,34 @@ class MeetTableViewController: UITableViewController {
         
     }
     
+    
+    func filterContentForSearchText(_ searchText: String){
+        guard let data = data else{return}
+        filteredData = data.filter({ (meet) -> Bool in
+            if let name = meet.name{
+                return name.lowercased().contains(searchText.lowercased())
+            }
+            return false
+        })
+        tableView.reloadData()
+    }
+    
+    func isFiltering() -> Bool{
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    func searchBarIsEmpty() -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
 
+}
+
+extension MeetTableViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        if let text = searchController.searchBar.text{
+            filterContentForSearchText(text)
+        }
+        
+    }
 }
