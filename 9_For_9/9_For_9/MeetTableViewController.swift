@@ -190,7 +190,12 @@ class MeetTableViewController: UITableViewController {
                     let cell = view.superview as? MeetTableViewCell,
                     let data = data {
                     if let indexPath = tableView.indexPath(for: cell) {
-                        svc.meet = data[indexPath.row]
+                        if isFiltering(){
+                            svc.meet = filteredData[indexPath.row]
+                        }else{
+                            svc.meet = data[indexPath.row]
+                        }
+                        
                     }
                 }
                 
@@ -203,7 +208,12 @@ class MeetTableViewController: UITableViewController {
                     let cell = sender as? UITableViewCell,
                     let data = data {
                     if let indexPath = tableView.indexPath(for: cell) {
-                        svc.meet = data[indexPath.row]
+                        if isFiltering(){
+                            svc.meet = filteredData[indexPath.row]
+                        }else{
+                            svc.meet = data[indexPath.row]
+                        }
+                        
                     }
                 }
                 

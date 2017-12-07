@@ -369,7 +369,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbell" translatesAutoresizingMaskIntoConstraints="NO" id="NGu-Xo-Z9g">
-                                                <rect key="frame" x="0.0" y="72" width="375" height="139"/>
+                                                <rect key="frame" x="0.0" y="72" width="375" height="178"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5b-gZ-2bH">
                                                 <rect key="frame" x="20" y="21" width="335" height="31.5"/>
@@ -388,26 +388,6 @@
                                                     <action selector="onJoin:" destination="IOF-uB-Zjw" eventType="touchUpInside" id="WOf-B9-H1S"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2aP-JH-OcI">
-                                                <rect key="frame" x="112" y="235" width="150" height="52"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMK-uB-SHJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="24"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="150" id="II3-pS-obJ"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O84-G4-jij">
-                                                        <rect key="frame" x="0.0" y="34" width="150" height="18"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong Password Try Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-os-nlj">
                                                 <rect key="frame" x="90" y="450.5" width="194" height="19.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -434,6 +414,26 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2aP-JH-OcI">
+                                                <rect key="frame" x="112" y="271" width="150" height="52"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMK-uB-SHJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="II3-pS-obJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O84-G4-jij">
+                                                        <rect key="frame" x="0.0" y="34" width="150" height="18"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -452,15 +452,15 @@
                                             <constraint firstAttribute="trailing" secondItem="NGu-Xo-Z9g" secondAttribute="trailing" id="ZWk-uW-5RC"/>
                                             <constraint firstItem="NGu-Xo-Z9g" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" id="a5g-hw-BU3"/>
                                             <constraint firstAttribute="height" constant="900" id="cGR-0n-fR1"/>
-                                            <constraint firstItem="2aP-JH-OcI" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="235" id="gNm-tU-nBt"/>
-                                            <constraint firstAttribute="bottom" secondItem="NGu-Xo-Z9g" secondAttribute="bottom" constant="689" id="gja-CP-BO9"/>
+                                            <constraint firstItem="2aP-JH-OcI" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="271" id="gNm-tU-nBt"/>
+                                            <constraint firstAttribute="bottom" secondItem="NGu-Xo-Z9g" secondAttribute="bottom" constant="650" id="gja-CP-BO9"/>
                                             <constraint firstAttribute="bottom" secondItem="gdl-Jt-aLG" secondAttribute="bottom" constant="372" id="hH5-V3-Nir"/>
                                             <constraint firstItem="q5b-gZ-2bH" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="21" id="hm1-ed-s8u"/>
                                             <constraint firstItem="7W2-zI-Rcu" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="376" id="jQH-OK-Hw1"/>
                                             <constraint firstItem="gdl-Jt-aLG" firstAttribute="top" secondItem="5yn-1n-2qY" secondAttribute="top" constant="498" id="lpd-vu-obr"/>
                                             <constraint firstItem="q5b-gZ-2bH" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="20" symbolic="YES" id="pdl-2M-cc5"/>
                                             <constraint firstAttribute="trailing" secondItem="2aP-JH-OcI" secondAttribute="trailing" constant="113" id="t3V-hl-P10"/>
-                                            <constraint firstAttribute="bottom" secondItem="2aP-JH-OcI" secondAttribute="bottom" constant="613" id="wXx-pC-Q11"/>
+                                            <constraint firstAttribute="bottom" secondItem="2aP-JH-OcI" secondAttribute="bottom" constant="577" id="wXx-pC-Q11"/>
                                             <constraint firstItem="gdl-Jt-aLG" firstAttribute="leading" secondItem="5yn-1n-2qY" secondAttribute="leading" constant="20" symbolic="YES" id="zoG-rm-l0A"/>
                                         </constraints>
                                     </view>
