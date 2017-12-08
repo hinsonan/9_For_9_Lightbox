@@ -32,13 +32,16 @@ class JudgeViewController: UIViewController {
         //gives the position text
         if judge?.position == Judge.Position.Left{
             judgePositionText.text = "L"
+            self.navigationItem.title = "Left Judge"
         }else if judge?.position == Judge.Position.Head{
             judgePositionText.text = "H"
+            self.navigationItem.title = "Head Judge"
         }else{
             judgePositionText.text = "R"
+            self.navigationItem.title = "Right Judge"
         }
         
-        self.navigationItem.title = "Judge Mode"
+        
         
         //makes the reset btn not pressable
         resetBtn.isEnabled = false
